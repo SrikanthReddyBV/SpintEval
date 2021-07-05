@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <style>
+      .blogposts {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .blogposts div > p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      .blogposts div > h6 {
+        margin: 5px;
+      }
+      .services {
+        display: grid;
+        margin: 2%;
+        grid-gap: 20px;
+        grid-template:
+          "a b c"
+          "d e f";
+      }
+      .title {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+      }
+      .title > p {
+        margin: 5px;
+        color: orangered;
+        font-size: x-small;
+      }
+      .title > h3 {
+        margin: 10px;
+        color: black;
+      }
+      .title > a {
+        font-size: smaller;
+        text-align: center;
+        margin: 2% 20%;
+      }
+      .blogImg {
+        max-height: 150px;
+        max-width: 250px;
+      }
+      .button > p {
+        background-color: orangered;
+        height: 20px;
+        width: 100px;
+        margin: auto;
+        margin-top: 10px;
+      }
+      .button > p {
+        color: white;
+      }
+
+      .logo {
+        max-width: 50px;
+        max-height: 50px;
+        float: left;
+      }
+      .services div > p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .services div > h6 {
+        margin: 5px;
+        font-weight: lighter;
+      }
+      #one {
+        grid-area: "a";
+      }
+      #two {
+        grid-area: "b";
+      }
+      #three {
+        grid-area: "c";
+      }
+      #four {
+        grid-area: "d";
+      }
+      #five {
+        grid-area: "e";
+      }
+      #six {
+        grid-area: "f";
+      }
+      @media (max-width: 600px) {
+        .services {
+          display: grid;
+          margin: 2% 20%;
+          grid-gap: 20px;
+          grid-template:
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f";
+        }
+        .blogposts {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          justify-content: center;
+          column-gap: 10px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          align-items: center;
+        }
+      }
+      @media (min-width: 600px) and (max-width: 768px) {
+        .services {
+          display: grid;
+          margin: 2% 20%;
+          grid-gap: 20px;
+          grid-template:
+            "a b"
+            "c d"
+            "e f";
+        }
+      }
+
+      @media (min-width: 996px) and (max-width: 1500px) {
+        .services {
+          display: grid;
+          margin: 2%;
+          grid-gap: 20px;
+          grid-template:
+            "a b c"
+            "d e f";
+        }
+        .blogposts {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          column-gap: 10px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <p>NEWS & UPDATE</p>
+      <h3>Our Blog Posts</h3>
+    </div>
+    <div class="blogposts">
+      <div>
+        <img
+          class="blogImg"
+          src="https://bocadolobo.com/blog/wp-content/uploads/2020/12/Heydar-Aliyev-Center.jpg"
+        />
+        <h6>29 January 2019</h6>
+        <p>Architectural art modern</p>
+      </div>
+      <div>
+        <img
+          class="blogImg"
+          src="https://bocadolobo.com/blog/wp-content/uploads/2020/12/Heydar-Aliyev-Center.jpg"
+        />
+        <h6>29 January 2019</h6>
+        <p>Architectural art modern</p>
+      </div>
+      <div>
+        <img
+          class="blogImg"
+          src="https://bocadolobo.com/blog/wp-content/uploads/2020/12/Heydar-Aliyev-Center.jpg"
+        />
+        <h6>29 January 2019</h6>
+        <p>Architectural art modern</p>
+      </div>
+    </div>
+    <div class="button">
+      <p>View all posts</p>
+      <br /><br />
+    </div>
+
+    <div class="title">
+      <p>SERVICES</p>
+      <h3>Our Services</h3>
+      <a> is simply dummy text of the printing and typesetting industry. </a>
+    </div>
+    <div class="services">
+      <div id="one">
+        <img
+          class="logo"
+          src="https://previews.123rf.com/images/aspi13/aspi131907/aspi13190700012/126399734-light-bulb-icon.jpg"
+        />
+        <p>Innovative Structure</p>
+        <h6>
+          is simply dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been the industry's standard dummy text ever since the
+          1500s.
+        </h6>
+      </div>
+      <div id="two">
+        <img
+          class="logo"
+          src="https://previews.123rf.com/images/aspi13/aspi131907/aspi13190700012/126399734-light-bulb-icon.jpg"
+        />
+        <p>Innovative Structure</p>
+        <h6>
+          is simply dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been the industry's standard dummy text ever since the
+          1500s.
+        </h6>
+      </div>
+      <div id="three">
+        <img
+          class="logo"
+          src="https://previews.123rf.com/images/aspi13/aspi131907/aspi13190700012/126399734-light-bulb-icon.jpg"
+        />
+        <p>Innovative Structure</p>
+        <h6>
+          is simply dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been the industry's standard dummy text ever since the
+          1500s.
+        </h6>
+      </div>
+      <div id="four">
+        <img
+          class="logo"
+          src="https://previews.123rf.com/images/aspi13/aspi131907/aspi13190700012/126399734-light-bulb-icon.jpg"
+        />
+        <p>Innovative Structure</p>
+        <h6>
+          is simply dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been the industry's standard dummy text ever since the
+          1500s.
+        </h6>
+      </div>
+      <div id="five">
+        <img
+          class="logo"
+          src="https://previews.123rf.com/images/aspi13/aspi131907/aspi13190700012/126399734-light-bulb-icon.jpg"
+        />
+        <p>Innovative Structure</p>
+        <h6>
+          is simply dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been the industry's standard dummy text ever since the
+          1500s.
+        </h6>
+      </div>
+      <div id="six">
+        <img
+          class="logo"
+          src="https://previews.123rf.com/images/aspi13/aspi131907/aspi13190700012/126399734-light-bulb-icon.jpg"
+        />
+        <p>Innovative Structure</p>
+        <h6>
+          is simply dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been the industry's standard dummy text ever since the
+          1500s.
+        </h6>
+      </div>
+    </div>
+  </body>
+</html>
